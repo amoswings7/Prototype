@@ -22,10 +22,14 @@ submitBtn.addEventListener('click',(e)=>{
 })
 closeBtn.addEventListener('click',()=>{
     // e.preventDefault()
+    document.body.style.height='fit-content'
+    document.body.style.overflowY='visible'
     form.style.display='none'
 })
 openFormBtn.addEventListener('click',()=>{
     // e.preventDefault()
+    document.body.style.height='100vh'
+    document.body.style.overflowY='hidden'
     form.style.display='flex'
 })
 // alert('hello')
