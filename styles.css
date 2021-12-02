@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.wrapper{
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+}
+.wrapper>a:nth-child(2)>div{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.wrapper>a>div{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.wrapper>a>div{
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    /* flex-flow: row wrap; */
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 200ms ease-in;
+}
+.wrapper>a>div:hover{
+    transform: scale(1.02);
+}
+/* .wrapper>div{
+    margin-left: 20px;
+} */
+.wrapper>a>div>div:first-child{
+    height: 250px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.438);
+    
+}
+.wrapper>a>div>div:last-child{
+    height:50px;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+}
+.wrapper>a>div>div:last-child>p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

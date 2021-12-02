@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form page</title>
+    <link rel="stylesheet" href="negotiate.css">
+    <script src="negotiate.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1">
+            <ul>
+                <li>Regulated Online Pharmacy</li>
+                <li>24/7 Customer service</li>
+            </ul>
+        </div>
+        <div class="box2">
+            <button>START WEIGHT LOSS CONSULATION</button>
+        </div>
+        <div class="box3">
+            <div class="product">
+                <p>PRODUCT 1</p>
+            </div>
+            <div class="product">
+                <p>PRODUCT 2</p>
+            </div>
+            <div class="product">
+                <p>PRODUCT 3</p>
+            </div>
+            <div class="product">
+                <p>PRODUCT 4</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-container">
+        <div class="close">
+            <span></span>
+            <span></span>
+        </div>
+        <form >
+            <div class="about-person">
+                <h1>About you</h1>
+                <div class="question">
+                    <p>Do you know how and when to use your inhaler?</p>
+                    <div>
+                        <button id="yes" class='yes'>Yes</button>
+                        <button id='no' class='no'>No</button>
+                    </div>
+                </div>
+                <div class="more-questions1">
+                    <label for="first-choice">
+                        <input id="first-choice" name="amos" type="radio">
+                        My inHaler has run out
+                    </label>
+                    
+                    <label for="second-choice">
+                        <input id="second-choice" name="amos" type="radio">
+                            I need a spare inhaler
+                    </label>
+
+                    <label for="third-choice">
+                        <input id="third-choice" name="amos" type="radio">
+                        To replace a lost or broken inhaler
+                    </label>
+                </div>
+                <div class="more-questions2">
+                    <p>Please provide more details</p>
+                    <label for="text-area">
+                        <textarea placeholder="What current information do you have on how and when to use your inhaler?" name="comment-area" id="text-area" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+            </div>
+            <hr>
+
+
+
+            <div class="symptoms">
+                <h1>Your symptoms</h1>
+                <div class="question">
+                    <p>Have you called an ambulance or had emergency treatment for breathing problems in the last year?</p>
+                    <div>
+                        <button id="yes" class='yes'>Yes</button>
+                        <button id='no' class='no'>No</button>
+                    </div>
+                </div>
+
+                <div class="more-questions1">
+                    <p>Please provide more details</p>
+                    <label for="text-area">
+                        <textarea placeholder="What emergency did you have? What was the outcome?" name="comment-area" id="text-area" cols="30" rows="10"></textarea>
+                    </label>
+                </div>
+            </div>
+            <hr>
+            <input id="submit-btn" type="submit" value="SUBMIT FORM">
+        </form>
+    </div>
+</body>
+</html>
